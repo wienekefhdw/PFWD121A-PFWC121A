@@ -1,5 +1,5 @@
 Visual Studio Code https://code.visualstudio.com/download
 + Prettier Extension https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
-+ HTTP Client TODO
++ HTTP Client https://www.postman.com/downloads/
 
 nodejs https://nodejs.org/en/download/
