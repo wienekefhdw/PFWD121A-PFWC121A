@@ -1,0 +1,2 @@
+Aufgabe 2 Schreibe den HTML-Code für eine Seite mit der Überschrift "Meine drei Lieblingsfarben" und einer Liste von drei Farben: rot, grün und blau.
+Binde ein Bild von einem Gegenstand in deiner absoluten Lieblingsfarbe ein.
