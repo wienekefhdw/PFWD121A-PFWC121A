@@ -1,0 +1,8 @@
+Nennt mir den tagesaktuellen Preis meines liebsten CS:GO Skins "M4A4 | The Emperor (Minimal Wear)"
+
+Hinweise:
+API-URL: http://steamcommunity.com/market/priceoverview/
+Parameter:
+appid = 730 						// 730 ist die ID für das Spiel Counterstrike: Global Offensive
+currency = 3 						// 3 für €
+market_hash_name = <Skin-Name> 		// muss URL kodiert werden
