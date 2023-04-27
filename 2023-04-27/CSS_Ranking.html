@@ -1,0 +1,30 @@
+<html>
+    <body>
+        <style>
+            body{    background-color: aliceblue;            }
+            p{                background-color: aqua;            }
+            div > p{                background-color: blueviolet;            }
+            .exampleClass{                background-color: darkgoldenrod;            }
+            #prio3{                background-color: lightcoral;            }
+            .important{                background-color: black !important;
+                color: aliceblue;            }
+        </style>
+        <!-- Priorität von schwach (7) zu stark (1) -->
+        <!-- übergeordnetes Element -->
+        Prio 7
+        <!-- eigenes Element -->
+        <p>Prio 6</p>
+        <!-- Verschachtelung: Element in Element -->
+        <div>
+            <p>Prio 5</p>
+        </div>
+        <!-- Klasse -->
+        <p class="exampleClass">Prio 4</p>
+        <!-- ID -->
+        <p class="exampleClass" ID="prio3">Prio 3</p>
+        <!-- Inline Styling -->
+        <p style="background-color:orange">Prio 2</p>
+        <!-- Important -->
+        <p class="exampleClass important" style="background-color:orange">Prio 1</p>
+    </body>
+</html>

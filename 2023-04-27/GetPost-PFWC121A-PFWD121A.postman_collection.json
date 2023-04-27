@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "1625f05b-744a-412d-8fbe-7ffc767f552f",
+		"name": "GetPost-PFWC121A-PFWD121A",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Guid",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://resttest20230426202527.azurewebsites.net/Guid",
+					"protocol": "https",
+					"host": [
+						"resttest20230426202527",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"Guid"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET GUID WithStartletter",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://resttest20230426202527.azurewebsites.net/Guid/WithStart?startLetter=8",
+					"protocol": "https",
+					"host": [
+						"resttest20230426202527",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"Guid",
+						"WithStart"
+					],
+					"query": [
+						{
+							"key": "startLetter",
+							"value": "8",
+							"description": "a valid hex value"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET GUID WIthStartletter 400er Response 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://resttest20230426202527.azurewebsites.net/Guid/WithStart?startLetter=x",
+					"protocol": "https",
+					"host": [
+						"resttest20230426202527",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"Guid",
+						"WithStart"
+					],
+					"query": [
+						{
+							"key": "startLetter",
+							"value": "x"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET GUID WIthStartletter 400er Response 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://resttest20230426202527.azurewebsites.net/Guid/WithStart",
+					"protocol": "https",
+					"host": [
+						"resttest20230426202527",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"Guid",
+						"WithStart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SaveStudent",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"FirstName\":\"Matthis\",\r\n    \"LastName\":\"Wieneke\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://resttest20230426202527.azurewebsites.net/Student",
+					"protocol": "https",
+					"host": [
+						"resttest20230426202527",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"Student"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

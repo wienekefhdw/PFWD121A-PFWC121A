@@ -1,0 +1,14 @@
+{
+    "OrderId":1,
+    "OrderTime": "2023-04-27 17:21:15.000",
+    "OrderNotes": ["Mit Zwiebel", "Ohne Fleisch"],
+    "Customer": {
+        "PersonId":1,
+        "Surname":"Matthis",
+        "Lastname":"Wieneke",
+        "Age":42,
+        "Street":"Fürstenallee",
+        "City":"Paderborn",
+        "Zip":"33102"
+    }
+}

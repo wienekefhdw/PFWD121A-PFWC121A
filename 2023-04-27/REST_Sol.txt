@@ -1,0 +1,7 @@
+Aufgabe 5
+1) Wie viele unterschiedliche Guids kann es geben?
+Guid besteht aus 32 HEX-Zeichen, dementsprechend:
+--> 16^32 = 3,4028236692093846346337460743177e+38
+oder 2^128 = 3,4028236692093846346337460743177e+38
+
+2-5) siehe Postman-JSON

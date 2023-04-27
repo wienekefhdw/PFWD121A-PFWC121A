@@ -1,0 +1,7 @@
+Verschönert die SaveStudent Seite von letztem mal.
+Tobt euch aus, bringt eine Menge CSS ins Spiel - lasst das alte Formular schöner, moderner, farbenfroher und responsiver aussehen.
+
+Mindestens:
+- einen umschließenden Rand
+- farbliche Überschriften
+- horizontale und vertikale Zentrierung

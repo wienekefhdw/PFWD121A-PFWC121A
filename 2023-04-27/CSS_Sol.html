@@ -1,0 +1,48 @@
+<html>
+    <head>
+    </head>
+  <body>
+    <style>
+      .border{
+        border: 2px solid black;
+        width: 250px;
+      }
+      .wrapper{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+      h1{
+        color: blue;
+      }
+    </style>
+    <div class="wrapper">
+      <div class="border">
+        <h1>Notenvergabe</h1>
+        <form>
+            <label for="vorname">Vorname:</label>
+            <input type="text" id="vorname" name="vorname" maxlength="10"><br>
+            <label for="nachname">Nachname:</label>
+            <input type="text" id="nachname" name="nachname" maxlength="10"><br>
+            <label for="passwort">Passwort:</label>
+            <input type="password" id="passwort" name="passwort" maxlength="10"><br>
+            <label>Note:</label>
+            <input type="radio" id="eins" name="note" value="1">
+            <label for="eins">1</label>
+            <input type="radio" id="zwei" name="note" value="2" checked>
+            <label for="zwei">2</label>
+            <input type="radio" id="drei" name="note" value="3">
+            <label for="drei">3</label>
+            <input type="radio" id="vier" name="note" value="4">
+            <label for="vier">4</label>
+            <input type="radio" id="fünf" name="note" value="5">
+            <label for="fünf">5</label>
+            <br>
+            <button type="submit">Absenden</button>
+        </form>
+      </div>
+    </div>       
+  </body>
+</html>
