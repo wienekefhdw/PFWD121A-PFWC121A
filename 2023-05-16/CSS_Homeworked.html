@@ -1,0 +1,34 @@
+
+
+<!doctype html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <title>CSS color</title>
+    <meta name="description" content="css color">
+    </head>
+    <body>  
+        <style>
+            body { color: blue; }
+            p { color: purple; }
+            .class { color:green; }
+            #identifier { color:red; }
+            #second > p { background-color: yellow; }
+            .override { color: pink !important; }
+        </style>
+		<span style="color:lightblue;">Color 0: lightblue</span>
+        <div id="first">
+            <p style="color:orange;" class="class">Color 1: </p>
+            <p class="override" style="color:orange;" >Color 2: </p>
+        </div>
+        <div id="second">
+            Color 3: <br>
+            <p>Color 4: </p>
+        </div>
+        <div id="third">
+            <p class="class">Color 5: </p>
+            <p id="identifier">Color 6: </p>
+        </div>
+    </body>
+</html>
+

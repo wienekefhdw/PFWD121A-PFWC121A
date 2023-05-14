@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Notendarstellung</title>
+  <meta name="description" content="Noten der FHDW">
+</head>
+<body>
+  <script>
+    /*
+        Aufgabe: Fügt einen Button zur Seite hinzu, der alle 5.0 Noten zu 1.0 Noten umwandelt. 
+        Die Statusspalte soll sich auch anpassen in dem Zuge.
+    */
+    function passExam(){
+
+    }
+  </script>
+  
+  <style>  
+    table, th, td {
+      border: 1px solid black;
+    }
+    
+    .P{
+      background-color: green;
+    }
+    
+    .N{
+      background-color: red;
+    }
+
+    th {
+      width: 33%
+    }
+  </style> 
+
+  <h1>Notenübersicht</h1>
+
+  <p>Student: Matthis</p>
+  <p>Matrikelnr.: 123</p>
+
+  <h2>Semester 1</h2>
+  <table style="width:100%">
+    <tr>
+      <th>Modul</th>
+      <th>Status</th> 
+      <th>Note</th>
+    </tr>
+    <tr>
+      <td>WTA</td>
+      <td class="P status">P</td>
+      <td class="grade">1.0</td>
+    </tr>
+    <tr>
+      <td>ABD</td>
+      <td id="ADBStatus" class="N status">N</td>
+      <td class="grade" id="ADBNote">5.0</td>
+    </tr>
+    <tr>
+      <td>CDE</td>
+      <td class="P status">P</td>
+      <td class="grade">1.7</td>
+    </tr>
+  </table>
+
+  <h2>Semester 2</h2>
+  <table style="width:100%">
+    <tr>
+      <th>Modul</th>
+      <th>Status</th> 
+      <th>Note</th>
+    </tr>
+    <tr>
+      <td>Mathe</td>
+      <td class="P status">P</td>
+      <td class="grade">4.0</td>
+    </tr>
+    <tr>
+      <td>P1</td>
+      <td class="N status">N</td>
+      <td class="grade">5.0</td>
+    </tr>
+    <tr>
+      <td>Business English</td>
+      <td class="P status">P</td>
+      <td class="grade">1.0</td>
+    </tr>
+  </table>
+</body>
+</html>
