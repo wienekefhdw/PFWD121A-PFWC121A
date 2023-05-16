@@ -1,0 +1,75 @@
+<html>
+    <body>
+        <script>
+            /*
+            Aufgabe:
+            Rufe auf Buttonklick eine GUID von der API ab. 
+            Diese soll anschließend unter dem Button im Frontend angezeigt werden.
+            https://resttest20230426202527.azurewebsites.net/Guid
+
+            Bonus:
+            Gebe den Anfangswert der Guid durch ein Textfeld vor.
+            Hinweis: https://resttest20230426202527.azurewebsites.net/swagger
+            */
+            function appendGuid(){
+                fetch('https://resttest20230426202527.azurewebsites.net/Guid')
+                    .then((response) => response.json())
+                    .then((guid) => {
+                        let resultP = document.getElementById("result");
+                        resultP.innerText = resultP.innerText + "\n" + guid;
+                    });
+            }
+
+            async function asyncappendGuid() {
+                const response = await fetch('https://resttest20230426202527.azurewebsites.net/Guid');
+                console.log(response);
+                const guid = await response.json();
+                let resultP = document.getElementById("result");
+                resultP.innerText = resultP.innerText + "\n" + guid;
+            }
+
+            async function appendGuidWithStartLetter(){
+                let startLetter = document.getElementById("startLetter").value;
+                
+                // validation via regex is alot shorter, but harder...
+                let regex = /^[a-fA-F0-9]{1}$/;
+                if(!regex.test(startLetter)){
+                    console.error(`${startLetter} a valid guid start letter`);
+                    return;
+                }
+                await makeGetCall(startLetter);
+                return;
+
+                /* validation without regex */
+                if(startLetter.length==1){
+                    const validChars = ["0","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f"];
+                    if(validChars.includes(startLetter)){
+                        await makeGetCall(startLetter);
+                    } else {
+                        console.error("Start Character is not valid for guid");
+                    }
+                } else {
+                    console.error("Input is too long");
+                }
+            }
+
+            async function makeGetCall(startLetter){
+                const apiUrl = 'https://resttest20230426202527.azurewebsites.net/Guid/WithStart?startLetter='+startLetter;
+                const response = await fetch(apiUrl);
+                const guid = await response.json();
+                let resultP = document.getElementById("resultWithStart");
+                resultP.innerText = resultP.innerText + "\n" + guid;
+            }
+        </script>
+        <h1>Aufgabe</h1>
+        <br>
+        <button onclick="asyncappendGuid()">Append Guid</button>
+        <p id="result"></p>
+        <br>
+        <hr>
+        <h1>Bonus</h1>
+        <input id="startLetter" type="text"/>
+        <button onclick="appendGuidWithStartLetter()">Get Guid With Letter</button>
+        <p id="resultWithStart"></p>
+    </body>
+</html>
