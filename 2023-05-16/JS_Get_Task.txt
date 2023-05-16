@@ -2,3 +2,7 @@ Aufgabe:
 Rufe auf Buttonklick eine GUID von der API ab. 
 Diese soll anschließend unter dem Button im Frontend angezeigt werden.
 https://resttest20230426202527.azurewebsites.net/Guid
+
+Bonus:
+Gebe den Anfangswert der Guid durch ein Textfeld vor.
+Hinweis: https://resttest20230426202527.azurewebsites.net/swagger
