@@ -10,8 +10,6 @@
     /*
         Aufgabe: Fügt einen Button zur Seite hinzu, der alle 5.0 Noten zu 1.0 Noten umwandelt. 
         Die Statusspalte soll sich auch anpassen in dem Zuge.
-
-        Bis 16:20
     */
     function passExam(){
       let grades = document.getElementsByTagName("td"); // byClassName is fine too
@@ -22,16 +20,20 @@
         }
       }      
 
-      /* Only touch the relevant cells 
+      /* Only touch the relevant cells using while, i++ & modulo */
       let statusCells = document.getElementsByClassName("status"); 
-      for(let i = 1; i < statusCells.length; i+=3){
-        let statusCell = statusCells.item(i);
-        statusCell.classList.add("P");
-        statusCell.classList.remove("N");
-        statusCell.textContent = "P";
+      let i = 0;
+      console.log(statusCells);
+      while(i < statusCells.length){
+        if(i%3==1){
+          let statusCell = statusCells.item(i);
+          console.log(statusCell);
+          statusCell.classList.add("P");
+          statusCell.classList.remove("N");
+          statusCell.textContent = "P";
+        }
+        i++;
       }
-      */
-      /* Change Status: Only touch relevant cells using while, i++ & modulo */
     }
   </script>
   
