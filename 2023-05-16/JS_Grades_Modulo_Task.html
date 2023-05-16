@@ -11,42 +11,27 @@
         Aufgabe: Fügt einen Button zur Seite hinzu, der alle 5.0 Noten zu 1.0 Noten umwandelt. 
         Die Statusspalte soll sich auch anpassen in dem Zuge.
 
-        (/) button hinzufügen & an Funktion knüpfen        
-        (/) Alle Noten Zellenelemente in einer Variable speichern
-        (/) Durch alle Noten iterieren, prüfen ob jeweils 5.0 Note vorhanden ist. Wenn ja, ersezten
-
-        (/) Alle Statuszellenelemente in einer Variable speichern
-        (/) durch iterieren und wenn Text == N, dann Text auf P anpassen & Klassen ersetzen
-        (/) Den Text auf P ändern und Klassen anpassen
+        Bis 16:20
     */
     function passExam(){
-      let notes = document.getElementsByClassName("grade");
-      for(let i=0; i < notes.length; i++){
-        if(notes.item(i).innerHTML=="5.0"){
-          notes.item(i).innerHTML="1.0";
+      let grades = document.getElementsByTagName("td"); // byClassName is fine too
+      for(let i = 0; i < grades.length; i++){
+        let grade = grades[i];
+        if(grade.innerText=="5.0"){
+          grade.innerText = "1.0";
         }
-      }
+      }      
 
-      let statusCells = document.getElementsByClassName("status");
-      for(let i=0; i < statusCells.length; i++){
-        if(statusCells.item(i).classList.contains("N")){
-          statusCells.item(i).innerHTML = "P";
-          statusCells.item(i).classList.replace("N","P");
-        }
+      /* Only touch the relevant cells 
+      let statusCells = document.getElementsByClassName("status"); 
+      for(let i = 1; i < statusCells.length; i+=3){
+        let statusCell = statusCells.item(i);
+        statusCell.classList.add("P");
+        statusCell.classList.remove("N");
+        statusCell.textContent = "P";
       }
-    }
-
-      function passFabian(){
-      let notes = document.getElementsByClassName("grade");
-      let statusCells = document.getElementsByClassName("status");
-      for(let i=0; i < notes.length; i++){
-        if(notes.item(i).innerHTML=="5.0"){
-          notes.item(i).innerHTML="1.0";
-          statusCells[i].style.backgroundColor = "green";
-          statusCells[i].innerHTML = "P";
-        }
-      }
-
+      */
+      /* Change Status: Only touch relevant cells using while, i++ & modulo */
     }
   </script>
   
@@ -120,6 +105,6 @@
       <td class="grade">1.0</td>
     </tr>
   </table>
-  <button onclick="passFabian()">Click Me</button>
+  <button onclick="passExam()">Pass Exam</button>
 </body>
 </html>
