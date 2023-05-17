@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    </head>
+    <body>
+        <script>
+            /* AUFGABE
+            Nimm das GetGuid-Example (Siehe Github: https://github.com/wienekefhdw/PFWD121A-PFWC121A/blob/bb9de238e3467e6ba23ca97ef85a157819ef3863/2023-05-16/JS_Get_Sol.html)
+            und baue es um, sodass:	
+            - jquery verwendet wird	
+            - der Abruf der Guid nicht nach Buttonklick, sondern automatisch nach dem Laden der Seite passiert
+            - keine document.getElementXXX funktionen verwendet werden
+            */
+
+            $(document).ready(function(){
+                appendGuid();
+            });
+
+            function appendGuid(){
+                fetch('https://resttest20230426202527.azurewebsites.net/Guid')
+                    .then((response) => response.json())
+                    .then((guid) => {
+                        $("#result").text(guid);
+                    });
+            }
+        </script>
+        <h1>Aufgabe</h1>
+        <br>
+        <p id="result"></p>
+    </body>
+</html>

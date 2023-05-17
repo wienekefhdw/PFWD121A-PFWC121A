@@ -1,0 +1,3 @@
+Bindet in die SaveStudent-Seite (./JS_Post_Sol.html) Bootstrap ein.
+Spielt ein bisschen mit der Design-Bibliothek rum 
+und verschönert eure Webseite (bspw. Responsivität, Abstände, Button-Design, etc.)
