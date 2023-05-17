@@ -1,0 +1,8 @@
+Zeitvorgabe: 14:15
+
+Erstelle ein Frontend, welches Vorname und Nachname eines Benutzers entgegennimmt und auf Buttonklick an folgende API zum Speichern sendet.
+Zeige den positiven Response im Frontend an.
+
+API-Endpunkt: https://resttest20230426202527.azurewebsites.net/Student
+
+Hilfestellung https://resttest20230426202527.azurewebsites.net/swagger/index.html

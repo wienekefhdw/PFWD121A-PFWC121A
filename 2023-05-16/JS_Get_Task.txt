@@ -1,3 +1,5 @@
+Bis: 17.50
+
 Aufgabe:
 Rufe auf Buttonklick eine GUID von der API ab. 
 Diese soll anschließend unter dem Button im Frontend angezeigt werden.
