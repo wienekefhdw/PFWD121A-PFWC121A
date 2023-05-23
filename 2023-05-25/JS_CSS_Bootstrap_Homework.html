@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+      <script>
+        /*
+          Bindet in die SaveStudent-Seite (./JS_Post_Sol.html) Bootstrap ein.
+          Spielt ein bisschen mit der Design-Bibliothek rum 
+          und verschönert eure Webseite (bspw. Responsivität, Abstände, Button-Design, etc.)
+        
+          Integrate bootstrap: https://www.w3schools.com/bootstrap/bootstrap_get_started.asp
+          Documentation bootstrap: https://getbootstrap.com/docs/5.3/examples/
+        */
+      </script>
+      <style>
+        .left{
+          background-color: aquamarine;
+        }
+        .middle{
+          background-color: coral;
+        }
+        .right{
+          background-color: darkolivegreen;
+        }
+      </style>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm left">
+              One of three columns
+            </div>
+            <div class="col-sm middle">
+              <h2>Task "Save a Student"</h2>
+              <div class="container">
+                <div class="row">
+                  <div class="col-4">
+                    <label for="firstname">Vorname</label>
+                  </div>
+                  <div class="col-8">
+                    <input id="firstname" type="text"/>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-4">
+                    <label for="lastname">Nachname</label>
+                  </div>
+                  <div class="col-8">
+                    <input id="lastname" type="text"/>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center">
+                <button onclick="saveStudent()">Speichern</button>
+              </div>
+              <p id="response"></p>
+            </div>
+            <div class="col-sm right">
+              One of three columns
+            </div>
+          </div>
+        </div>
+    </body>
+</html>

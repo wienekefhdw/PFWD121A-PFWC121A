@@ -1,0 +1,16 @@
+Klausurrelevante Themen
+Seitenangaben in Bezug auf Skript v1.1.2
+
+* Architektur-Pattern 49-50
+* Kommunikations-Pattern 51-52
+* Bibliotheken, Middleware & Frameworks 54-58
+* DNS 65-71
+* Mail 73-83
+* HTTP 88-95
+* REST (im Zusammenhang mit HTTP-Methoden) 44-45, 86
+* HTML/CSS/JS 98-108
+* JSON 109-113
+* Cloud Basics 118-122
+* Web-Anwendungen 136-140
+* Alle Übungen
+* Probeklausur
