@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            /*  Auf Buttonklick soll der Text im Input-Feld umgedreht werden.
+                Also von hinten nach vorne */
+            function reverse(){
+                // Input value in Variable schreiben
+                let input = document.getElementById("idOfInputField").value;
+
+                // Character Array auf dem String erzeugen
+                // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split
+                let inputAsCharacterArray = input.split('');
+                
+                let result = [];
+                // durch das Array Iterieren
+                inputAsCharacterArray.forEach(character => {
+                    // Jeden Buchstaben an erster Stelle ins Array schreiben
+                    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift
+                    result.unshift(character);
+                });
+
+                // Ergebnis zurückschreiben
+                // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join
+                document.getElementById("idOfInputField").value = result.join('');
+            }
+        </script>
+        <input id="idOfInputField" type="text" value="Text inside input field" />
+        <button onclick="reverse()">Reverse</button>
+    </body>
+</html>
