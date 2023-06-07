@@ -1,0 +1,88 @@
+1
+Domain über DNS aufgelöst zu IP. Nameserver stellen Antwort bereit. Kennt der nächste Nameserer die Antwort nicht, wird der nächst höhere rekursiv gefragt. Einige Nameserver cachen Ergebnisse für bessere Performance.
+? Partitionierung & Replizieren 
+NT Konsistenzverlust
+
+2
+Selektor { Eigenschaft: Wert }
+Werden angewendet nach absteigender Wichtigkeit/Konkretheit
+
+Important
+Inline
+ID
+Class
+Verschachtelung Element > Element (bspw.)
+Element
+Umfassendes Element / Vererbt
+
+Textfarben:
+C1 Orange
+C2 Pink
+C3 Blue
+C4 Purple (Obacht - Background-Color: Yellow)
+C5 Green
+C6 Red
+
+3
+a) dolor
+Value der Textbox wird in ein Array gewandelt und an den Leerzeichen getrennt. Der Index wird aus der zweiten Textbox erhalten. Der Index 2 im Array ist der dritte Eintrag, dementsprechend dolor. dolor wird zurück in das Paragraph Element mit der id resultText geschrieben.
+
+b)
+sentence "Lorem ipsum Klausur sit amet"
+index 2
+separator " "
+limit 5
+
+4
+a)
+Get Abrufen
+Post Speichern
+Put Updaten
+Delete Löschen
+
+Safe: Get
+Idempotent: Get, Put & Delete
+
+Get Parameter im Querystring - kein Body
+Put/Post - Ressource im Body
+Delete - lieber kein Body, aber auch nicht offiziell verboten
+
+b)
+idempotent: Gleiches Ergebnis bei mehrmaligen Ausführen, wie bei einfacher Ausführung
+safe: keine Seiteneffekte/Manipulation der Ressource
+Bsp: 3x Get Request Student mit Id 1 -> Keine Veränderungen der Studierenden Ressource. Gleiches Ausgabeergebnis, weil nicht verändert
+
+5
+a)
+{
+"CompanyId": 5,
+"Disciplines": ["sport", "chess", "swimming"],
+"Age": 42,
+"MailAddress": "darvis@1und1.de",
+"Phone": "123456789",
+"Name": "Matthis",
+"Address": {
+"Street": "Fuerstenallee",
+"City":"Paderborn",
+"Zip":33102,
+"CurrentAddress": true
+}
+}
+
+b)
+Body Post Request
+Response Body Get
+
+6
+a)
+Pay-as-you-go
+Bedarfsgerechte Skalierbarkeit - horizontal/vertikal
+
+b)
+IaaS - Infrastructure as a Service
+PaaS - Platform as a Service
+SaaS - Software as a Service
+
+IaaS: Hyperscaler stellt nur Infrastruktur. Anwender: OS, MW, Anwendung, Funktion
+PaaS: Hyperscaler stellt Infrastruktur, OS, Middleware. Anwender: Anwendung, Funktion
+SaaS: Clouddienstleister stellt alles
